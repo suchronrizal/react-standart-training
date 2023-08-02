@@ -1,0 +1,125 @@
+:root {
+  --btn-primary: #3fa027;
+  --border-btn-color: #358821;
+  --secondary: #555555;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+hr {
+  margin: 1rem 0;
+  border: none;
+  height: 1px;
+  background-color: #dfdfdf;
+}
+.container {
+  display: flex;
+  width: 50%;
+  border: 1px solid #b6b6b6;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 15px;
+}
+
+.container h3 {
+  display: block;
+}
+
+.form-inline {
+  margin-top: 3rem;
+}
+.form-inline .form-group {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-inline .form-group label {
+  margin-right: 2rem;
+  width: 5rem;
+}
+
+.form-inline .form-group input,
+textarea {
+  border: 1px solid #555555;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.container .wrap-btn {
+  display: flex;
+  align-self: center;
+}
+.container .btn {
+  padding: 0.5rem;
+  background-color: var(--btn-primary);
+  border: 1px solid var(--border-btn-color);
+  align-self: center;
+  width: 5rem;
+  border-radius: 5px;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .btn:hover {
+  background-color: #307f1c;
+  box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.1);
+}
+/* table user*/
+.content-list {
+  width: 100%;
+}
+
+.content-list h3 {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table tr th {
+  padding: 0.6rem;
+  background-color: #dedede;
+}
+.table tr td,
+th {
+  border: 1px solid #b1b1b1;
+}
+
+.table .btn-act {
+  width: 10rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table .btn-act a {
+  margin-right: 0.5rem;
+}
+
+.table tr td {
+  padding: 0.4rem;
+}
+
+.search {
+  margin: 1rem 0;
+}
+
+.search input {
+  padding: 0.5rem;
+}
+
+/* madia query tablet */
+@media (max-width: 991.98px) {
+  .container {
+    width: 80%;
+  }
+}
